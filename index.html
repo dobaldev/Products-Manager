@@ -9,13 +9,8 @@
 <!-- Vinculación del CSS -->
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+</body>
     <main>
-    <!-- Contenido de la demo -->
-    <h2>Datos obtenidos por la API</h2>
-    <div id="contenido">
-        <p>Cargando datos...</p>
-    </div>
 </main>
 </body>
 
@@ -76,8 +71,48 @@
     </div>
 </footer>
 
+<div>
+    <!-- Contenido de la demo -->
+    <h2>Datos obtenidos por la API</h2>
+    <div id="contenido">
+        <p>Cargando datos...</p>
+    </div>
+</div>
+
 <!-- Vinculación del JS -->
 <script src="script.js"></script>
+    <div id="datos"></div>
+<script
+        // URL de la API
+        const url = 'https://reqres.in/api/users/1';
 
+        // Realizar la solicitud a la API
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error en la solicitud');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Obtener el contenedor donde se mostrarán los datos
+                const contenedor = document.getElementById('datos');
+
+                // Crear un elemento para mostrar el nombre del usuario
+                const nombre = document.createElement('p');
+                nombre.textContent = `Nombre: ${data.data.first_name} ${data.data.last_name}`;
+
+                // Crear un elemento para mostrar el correo electrónico del usuario
+                const correo = document.createElement('p');
+                correo.textContent = `Correo: ${data.data.email}`;
+
+                // Agregar los elementos al contenedor
+                contenedor.appendChild(nombre);
+                contenedor.appendChild(correo);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
 </body>
 </html>
