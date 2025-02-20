@@ -32,11 +32,11 @@ localhost:8081/phpmyadmin/
 
 # 👀 Demo del Backend Fake API
 
-Este proyecto muestra cómo conectar el frontend con una API REST de prueba.
+- Este proyecto muestra cómo conectar el frontend con una API REST de prueba.
 
-🔗 **Demo en vivo:** [Ver aquí](https://codepen.io/ch4tgpt/full/WNworqo)
+- 🔗 **Demo en vivo:** [Ver aquí](https://codepen.io/ch4tgpt/full/WNworqo)
 
-📌 Funcionalidades
+## 📌 Funcionalidades
 
 - ✅ Agregar, editar y eliminar productos.
 - ✅ Interfaz dinámica con AJAX y jQuery.
