@@ -29,7 +29,7 @@ gestor_productos/ │── public/ # Archivos frontend (HTML, CSS, JS) │ │�
 4. Inicia un servidor local con XAMPP o ejecuta:
 php -S localhost:8000 -t public
 5. Abre en el navegador:
-http://localhost:8000
+http://localhost:8081/phpmyadmin
 
 ## 👀 VISTA PREVIA: Descarga el repositorio en tu pc y abre el archivo index.html
 
