@@ -69,5 +69,31 @@
 
 <!-- Vinculación del JS -->
 <script src="script.js"></script>
+// Función para obtener datos desde la API JSONPlaceholder
+function obtenerDatos() {
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error al obtener los datos");
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById("contenido").innerHTML = `
+                <div class="card">
+                    <h3>${data.title}</h3>
+                    <p>${data.body}</p>
+                </div>
+            `;
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            document.getElementById("contenido").innerHTML = "<p>Error al cargar los datos.</p>";
+        });
+}
+
+// Ejecutar la función al cargar la página
+document.addEventListener("DOMContentLoaded", obtenerDatos);
+
 </body>
 </html>
