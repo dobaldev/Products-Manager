@@ -1,3 +1,5 @@
+![Portada](GestordeProd.png)
+
 # Gestor de Productos
 
 Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL.  
