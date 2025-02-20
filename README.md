@@ -30,6 +30,8 @@ php -S localhost:8000 -t public
 5. Abre en el navegador:
 http://localhost:8000
 
+## 👀 VISTA PREVIA: Descarga el repositorio en tu pc y abre el archivo index.html
+
 📌 Funcionalidades
 
 ✅ Agregar, editar y eliminar productos.
