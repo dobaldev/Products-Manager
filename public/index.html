@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestor de Productos</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Productos Profesional</title>
+  <!-- Puedes incluir una fuente externa (opcional) -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Encabezado con navegación y hero -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Mi Empresa</a>
+        <ul class="nav-links">
+          <li><a href="#products">Productos</a></li>
+          <li><a href="#add-product">Agregar</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h1>Gestor de Productos</h1>
+        <p>Administra y visualiza tus productos de forma fácil y profesional.</p>
+      </div>
+    </div>
+  </header>
 
-    <h2>Lista de Productos</h2>
-    <ul id="lista-productos"></ul>
+  <!-- Contenido principal -->
+  <main class="container">
+    <!-- Sección de Productos -->
+    <section id="products">
+      <h2>Productos Disponibles</h2>
+      <div id="product-list" class="product-grid">
+        <!-- Aquí se cargarán los productos dinámicamente -->
+      </div>
+    </section>
 
-    <h3>Agregar Producto</h3>
-    <input type="text" id="nombre" placeholder="Nombre">
-    <input type="number" id="precio" placeholder="Precio">
-    <textarea id="descripcion" placeholder="Descripción"></textarea>
-    <button onclick="agregarProducto()">Agregar</button>
+    <!-- Sección para Agregar Productos -->
+    <section id="add-product">
+      <h2>Agregar Nuevo Producto</h2>
+      <form id="add-product-form">
+        <div class="form-group">
+          <label for="product-name">Nombre del Producto</label>
+          <input type="text" id="product-name" placeholder="Nombre del producto" required>
+        </div>
+        <div class="form-group">
+          <label for="product-price">Precio</label>
+          <input type="number" id="product-price" placeholder="Precio" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="product-description">Descripción</label>
+          <textarea id="product-description" placeholder="Descripción del producto"></textarea>
+        </div>
+        <button type="submit">Agregar Producto</button>
+      </form>
+    </section>
+  </main>
 
-    <script>
-        function cargarProductos() {
-            $.get("../api/productos.php", function(data) {
-                $("#lista-productos").html("");
-                data.forEach(producto => {
-                    $("#lista-productos").append(
-                        `<li>${producto.nombre} - $${producto.precio} 
-                        <button onclick="eliminarProducto(${producto.id})">Eliminar</button></li>`
-                    );
-                });
-            });
-        }
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-        function agregarProducto() {
-            const data = {
-                nombre: $("#nombre").val(),
-                precio: $("#precio").val(),
-                descripcion: $("#descripcion").val()
-            };
-            $.ajax({
-                url: "../api/productos.php",
-                type: "POST",
-                contentType: "application/json",
-                data: JSON.stringify(data),
-                success: function(response) {
-                    alert(response.mensaje);
-                    cargarProductos();
-                }
-            });
-        }
+  <script src="script.js"></script>
+</body>
+</html>
 
-        function eliminarProducto(id) {
-            $.ajax({
-                url: "../api/productos.php",
-                type: "DELETE",
-                contentType: "application/json",
-                data: JSON.stringify({ id: id }),
-                success: function(response) {
-                    alert(response.mensaje);
-                    cargarProductos();
-                }
-            });
-        }
-
-        $(document).ready(function() {
-            cargarProductos();
-        });
-    </script>
 
 </body>
 </html>
