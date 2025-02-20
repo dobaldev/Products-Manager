@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestor de Productos Profesional</title>
-  <!-- Puedes incluir una fuente externa (opcional) -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Productos - Demo Interactiva</title>
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Vinculación del CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Encabezado con navegación y hero -->
+  <!-- Encabezado con navegación y sección hero -->
   <header>
     <nav class="navbar">
       <div class="container">
-        <a href="#" class="logo">Adriel Dobal</a>
+        <a href="#" class="logo">Mi Empresa</a>
         <ul class="nav-links">
           <li><a href="#products">Productos</a></li>
           <li><a href="#add-product">Agregar</a></li>
-          <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
     </nav>
     <div class="hero">
       <div class="container">
         <h1>Gestor de Productos</h1>
-        <p>Administra y visualiza tus productos de forma fácil y profesional.</p>
+        <p>Explora y administra tus productos de forma interactiva y profesional.</p>
       </div>
     </div>
   </header>
 
-  <!-- Contenido principal -->
+  <!-- Contenido Principal -->
   <main class="container">
     <!-- Sección de Productos -->
     <section id="products">
       <h2>Productos Disponibles</h2>
       <div id="product-list" class="product-grid">
-        <!-- Aquí se cargarán los productos dinámicamente -->
+        <!-- Los productos se cargarán aquí dinámicamente -->
       </div>
     </section>
 
@@ -44,16 +44,16 @@
       <h2>Agregar Nuevo Producto</h2>
       <form id="add-product-form">
         <div class="form-group">
-          <label for="product-name">Nombre del Producto</label>
-          <input type="text" id="product-name" placeholder="Nombre del producto" required>
+          <label for="product-name">Nombre:</label>
+          <input type="text" id="product-name" placeholder="Ingresa el nombre del producto" required />
         </div>
         <div class="form-group">
-          <label for="product-price">Precio</label>
-          <input type="number" id="product-price" placeholder="Precio" step="0.01" required>
+          <label for="product-price">Precio:</label>
+          <input type="number" id="product-price" placeholder="Ingresa el precio" step="0.01" required />
         </div>
         <div class="form-group">
-          <label for="product-description">Descripción</label>
-          <textarea id="product-description" placeholder="Descripción del producto"></textarea>
+          <label for="product-description">Descripción:</label>
+          <textarea id="product-description" placeholder="Ingresa la descripción"></textarea>
         </div>
         <button type="submit">Agregar Producto</button>
       </form>
@@ -63,14 +63,11 @@
   <!-- Pie de página -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Adriel Dobal. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <!-- Vinculación del JS -->
   <script src="script.js"></script>
-</body>
-</html>
-
-
 </body>
 </html>
