@@ -183,4 +183,30 @@ form button:hover {
     flex-direction: column;
     gap: 10px;
   }
+  
+  /* ---- Estilos para la demo del backend ---- */
+
+#contenido {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    background-color: #ffffff;
+}
+
+h3 {
+    font-size: 20px;
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
 }
