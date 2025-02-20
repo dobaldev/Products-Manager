@@ -1,6 +1,6 @@
 ![👀 Portada Front](GestordeProductos.jpg)
 ![👀 Portada Back](phpMyAdmin.jpg)
-![👀 API Demo](API_Demo.jpg)
+![👀 API Demo](DemoAPI.jpg)
 
 # Gestor de Productos
 
