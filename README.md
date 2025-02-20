@@ -35,6 +35,7 @@ http://localhost:8000
 ✅ Consumo de API REST en JSON/XML.
 ✅ Seguridad con protección contra CSRF y validaciones.
 ✅ Pruebas automatizadas con PHPUnit.
+
 🏗 Futuras Mejoras
 
     Autenticación con JWT.
