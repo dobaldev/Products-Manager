@@ -30,6 +30,12 @@ localhost:8081/phpmyadmin/
 
 ## 👀 VISTA PREVIA DEL PROYECTO: https://gestordeproductosad.netlify.app/
 
+# Demo del Backend Fake API
+
+Este proyecto muestra cómo conectar el frontend con una API REST de prueba.
+
+🔗 **Demo en vivo:** [Ver aquí](https://codepen.io/ch4tgpt/full/WNworqo)
+
 📌 Funcionalidades
 
 - ✅ Agregar, editar y eliminar productos.
