@@ -6,19 +6,16 @@
 Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL.  
 
 ## 🛠 Tecnologías utilizadas
-- PHP (Backend)
-- MySQL (Base de datos)
-- JavaScript (Frontend)
-- jQuery (Manipulación del DOM y AJAX)
-- HTML5 y CSS3 (Interfaz de usuario)
-- Git (Control de versiones)
-- JSON y XML (Intercambio de datos)
-- API REST (Conexión con el backend)
-- PHPUnit (Pruebas unitarias)
-- GitHub Actions (CI/CD)
-
-## 📂 Estructura del Proyecto
-gestor_productos/ │── public/ # Archivos frontend (HTML, CSS, JS) │ │── index.html # Página principal │ │── styles.css # Estilos CSS │ │── script.js # Lógica del frontend │ │── api/ # Backend en PHP │ │── productos.php # API para gestionar productos │ │── config/ # Configuración de la base de datos │ │── database.php # Conexión a MySQL │ │── db/ # Base de datos │ │── database.sql # Script SQL de creación de tablas │ │── tests/ # Pruebas unitarias │ │── ApiTest.php # Test para la API con PHPUnit │ │── .gitignore # Archivos que no se suben a GitHub │── README.md # Documentación del proyecto
+- PHP
+- MySQL
+- JavaScript
+- jQuery
+- HTML5 y CSS3
+- Git
+- JSON y XML
+- API REST
+- PHPUnit
+- GitHub Actions
 
 ## 🚀 Instalación
 1. Clona el repositorio:
@@ -27,7 +24,7 @@ gestor_productos/ │── public/ # Archivos frontend (HTML, CSS, JS) │ │�
 2. Configura la base de datos en config/database.php.
 3. Importa el archivo db/database.sql en MySQL.
 4. Inicia un servidor local con XAMPP o ejecuta:
-php -S localhost:8000 -t public
+php -S localhost:8081 -t public
 5. Abre en el navegador:
 localhost:8081/phpmyadmin/
 
