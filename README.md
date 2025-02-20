@@ -31,6 +31,8 @@ php -S localhost:8000 -t public
 5. Abre en el navegador:
 localhost:8081/phpmyadmin/
 
+## 👀 VISTA PREVIA DEL PROYECTO
+
 📌 Funcionalidades
 
 ✅ Agregar, editar y eliminar productos.
