@@ -30,7 +30,7 @@ localhost:8081/phpmyadmin/
 
 ## 👀 VISTA PREVIA DEL PROYECTO: https://gestordeproductosad.netlify.app/
 
-# 👀 Demo del Backend Fake API
+- 👀 Demo del Backend Fake API
 
 - Este proyecto muestra cómo conectar el frontend con una API REST de prueba.
 
