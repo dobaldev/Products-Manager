@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Contenedor principal */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Lista de productos */
+  #product-list {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para cada producto */
+  .product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4b79a1;
+  }
+  
+  .product-item p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #4b79a1;
+    outline: none;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    background: #4b79a1;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #283e51;
+  }
+  
+  /* Adaptabilidad para pantallas pequeñas */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    .product-item h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
