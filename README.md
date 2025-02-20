@@ -1,5 +1,5 @@
 ![Portada](GestordeProductos.jpg)
-![👀 Portada Back](phpMyAdmin.png)
+![👀 Portada Back](phpMyAdmin.jpg)
 
 # Gestor de Productos
 
