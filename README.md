@@ -20,7 +20,7 @@ gestor_productos/ │── public/ # Archivos frontend (HTML, CSS, JS) │ │�
 ## 🚀 Instalación
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/TU_USUARIO/gestor_productos.git
+   git clone https://github.com/dobaldev/gestor_productos.git
 2. Configura la base de datos en config/database.php.
 3. Importa el archivo db/database.sql en MySQL.
 4. Inicia un servidor local con XAMPP o ejecuta:
