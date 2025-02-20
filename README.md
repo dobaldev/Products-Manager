@@ -1,7 +1,7 @@
 ![Portada](GestordeProductos.jpg)
 ![👀 Portada Back](phpMyAdmin.jpg)
 
-# Gestor de Productos
+# Gestor de Productos - Adriel Dobal
 
 Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL.  
 
