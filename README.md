@@ -1,4 +1,4 @@
-![👀 Portada Front](GestordeProd.jpg)
+![👀 Portada Front](GestordeProductos.jpg)
 ![👀 Portada Back](phpMyAdmin.jpg)
 
 # Gestor de Productos
