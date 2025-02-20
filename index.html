@@ -79,33 +79,5 @@
 <!-- Vinculación del JS -->
 <script src="script.js"></script>
 
-// Ejecutar la función al cargar la página
-document.addEventListener("DOMContentLoaded", obtenerDatos);
-
-function obtenerDatos() {
-    fetch("https://reqres.in/api/users/1")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Error al obtener los datos");
-            }
-            return response.json();
-        })
-        .then(data => {
-            document.getElementById("contenido").innerHTML = `
-                <div class="card">
-                    <h3>${data.data.first_name} ${data.data.last_name}</h3>
-                    <p>Email: ${data.data.email}</p>
-                </div>
-            `;
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            document.getElementById("contenido").innerHTML = "<p>Error al cargar los datos.</p>";
-        });
-}
-
-// Ejecutar la función al cargar la página
-document.addEventListener("DOMContentLoaded", obtenerDatos);
-
 </body>
 </html>
