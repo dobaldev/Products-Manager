@@ -30,11 +30,11 @@ http://localhost:8081/phpmyadmin
 
 📌 Funcionalidades
 
-✅ Agregar, editar y eliminar productos.
-✅ Interfaz dinámica con AJAX y jQuery.
-✅ Consumo de API REST en JSON/XML.
-✅ Seguridad con protección contra CSRF y validaciones.
-✅ Pruebas automatizadas con PHPUnit.
+-✅ Agregar, editar y eliminar productos.
+-✅ Interfaz dinámica con AJAX y jQuery.
+-✅ Consumo de API REST en JSON/XML.
+-✅ Seguridad con protección contra CSRF y validaciones.
+-✅ Pruebas automatizadas con PHPUnit.
 
 🏗 Futuras Mejoras
 
