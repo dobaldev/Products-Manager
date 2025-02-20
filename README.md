@@ -31,10 +31,9 @@ localhost:8081/phpmyadmin/
 ## 👀 VISTA PREVIA DEL PROYECTO: https://gestordeproductosad.netlify.app/
 
 - 👀 Demo del Backend Fake API
-- 🔗 **Demo en vivo:** [Ver aquí](https://codepen.io/ch4tgpt/full/WNworqo)
+- 🔗 **Demo en vivo:** [Ver aquí]([https://codepen.io/ch4tgpt/full/WNworqo](https://reqres.in/api/users/1
+)
 - Este proyecto muestra cómo conectar el frontend con una API REST de prueba.
-
-
 
 ## 📌 Funcionalidades
 
