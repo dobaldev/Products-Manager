@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Productos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Lista de Productos</h2>
+    <ul id="lista-productos"></ul>
+
+    <h3>Agregar Producto</h3>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="number" id="precio" placeholder="Precio">
+    <textarea id="descripcion" placeholder="Descripción"></textarea>
+    <button onclick="agregarProducto()">Agregar</button>
+
+    <script>
+        function cargarProductos() {
+            $.get("../api/productos.php", function(data) {
+                $("#lista-productos").html("");
+                data.forEach(producto => {
+                    $("#lista-productos").append(
+                        `<li>${producto.nombre} - $${producto.precio} 
+                        <button onclick="eliminarProducto(${producto.id})">Eliminar</button></li>`
+                    );
+                });
+            });
+        }
+
+        function agregarProducto() {
+            const data = {
+                nombre: $("#nombre").val(),
+                precio: $("#precio").val(),
+                descripcion: $("#descripcion").val()
+            };
+            $.ajax({
+                url: "../api/productos.php",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(data),
+                success: function(response) {
+                    alert(response.mensaje);
+                    cargarProductos();
+                }
+            });
+        }
+
+        function eliminarProducto(id) {
+            $.ajax({
+                url: "../api/productos.php",
+                type: "DELETE",
+                contentType: "application/json",
+                data: JSON.stringify({ id: id }),
+                success: function(response) {
+                    alert(response.mensaje);
+                    cargarProductos();
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            cargarProductos();
+        });
+    </script>
+
+</body>
+</html>

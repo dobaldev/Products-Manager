@@ -1,0 +1,25 @@
+# Ignorar archivos de configuración sensibles
+config/database.php
+
+# Archivos de entorno
+.env
+
+# Dependencias de Composer
+vendor/
+
+# Caché y logs
+cache/
+logs/
+*.log
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación de PHP
+*.compiled
+*.cache
+
+# Ignorar XAMPP y bases de datos locales
+*.sql
+xampp/
