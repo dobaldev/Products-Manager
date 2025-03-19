@@ -4,7 +4,9 @@
 
 # Gestor de Productos
 
-Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL.  
+Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL. 
+
+*ACLARACIÓN: Es una simple DEMO de mis habilidades "Full-Stack", puede que el proyecto tenga incongruencias, ya que no fue creado para ser 100% funcional.*
 
 ## 🛠 Tecnologías utilizadas
 - PHP
