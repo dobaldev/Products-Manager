@@ -2,7 +2,7 @@
 ![👀 Portada Back](phpMyAdmin.jpg)
 ![👀 API Demo](DemoAPI.jpg)
 
-# Gestor de Productos
+# 💼 Gestor de Productos
 
 Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL. 
 
@@ -17,19 +17,8 @@ Este es un proyecto FullStack con PHP y JavaScript que permite gestionar product
 - Git
 - JSON y XML
 - API REST
-- PHPUnit
+- PHPMyAdmin
 - GitHub Actions
-
-## 🚀 Instalación
-1. Clona el repositorio:
-   ```sh
-   git clone https://github.com/dobaldev/gestor_productos.git
-2. Configura la base de datos en config/database.php.
-3. Importa el archivo db/database.sql en MySQL.
-4. Inicia un servidor local con XAMPP o ejecuta:
-php -S localhost:8081 -t public
-5. Abre en el navegador:
-localhost:8081/phpmyadmin/
 
 ## 👀 VISTA PREVIA DEL PROYECTO: https://gestordeproductosad.netlify.app/
 
