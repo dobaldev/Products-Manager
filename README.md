@@ -6,7 +6,7 @@
 
 Este es un proyecto FullStack con PHP y JavaScript que permite gestionar productos en una base de datos MySQL. 
 
-*⚠️ ACLARACIÓN: Esto es una simple DEMO de mis habilidades "Full-Stack", puede que el proyecto tenga incongruencias, ya que no fue creado para ser 100% funcional, sino para validar mis SKILLS de programador (lenguajes y tecnologías utilizadas).*
+*⚠️ ACLARACIÓN: Esto es una simple DEMO de mis habilidades Full-Stack, puede que el proyecto tenga incongruencias, ya que no fue creado para ser 100% funcional, sino para validar mis SKILLS de programador (lenguajes y tecnologías utilizadas).*
 
 ## 🛠 Tecnologías utilizadas
 - PHP
